@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio| Contact</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/contact.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/resume.png" type="image/x-icon" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <%- include("partials/navbar.ejs") %>
+
+    <!-- Contact Form -->
+    <div class="form">
+      <form action="/contact" method="post">
+        <fieldset>
+          <label for="first-name">First Name:</label>
+          <input type="text" name="firstName" id="first-name" required />
+          <br />
+          <label for="last-name">Last Name:</label>
+          <input type="text" name="lastName" id="last-name" required />
+          <br />
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email" required />
+          <br />
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phoneNumber" id="phone" />
+          <br />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

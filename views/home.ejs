@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/home.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/resume.png" type="image/x-icon" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+  </head>
+  <body>
+    <%- include("partials/navbar.ejs") %>
+
+    <div class="home">
+      <div class="home-left">
+        <h1>Hi,I'm Hasnain Hassan</h1>
+        <h3>FullStack Web Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex
+          unde accusamus nam ipsum deleniti dolores ea necessitatibus, officia
+          quia animi hic molestiae suscipit et! Tenetur, sapiente?
+        </p>
+        <div class="btn-box">
+          <a href="/images/Resume_new.pdf">Resume</a>
+        </div>
+      </div>
+
+      <div class="home-right">
+        <img src="Images/HASNAIN HASSAN BG REMOVE.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Hobbies -->
+
+    <div class="hob">
+      <div class="Hobbies">
+        <div class="heading">
+          <h3>Hobbies</h3>
+        </div>
+      </div>
+
+      <div class="pics">
+        <div class="pic1">
+          <img
+            src="Images/imgonline-com-ua-resize-YE3M5YGHZv8.jpg"
+            alt=""
+            id="one"
+          />
+          <img
+            src="Images/imgonline-com-ua-resize-LvC3ufYCSIcdsQg.jpg"
+            alt=""
+            id="two"
+          />
+          <img
+            src="Images/imgonline-com-ua-resize-MGZDRPb7wdm2g.jpg"
+            alt=""
+            id="three"
+          />
+          <img
+            src="Images/imgonline-com-ua-resize-pWxioUF9t0N9c.jpg"
+            alt=""
+            id="four"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="wrapper">
+      <div class="shape-1"></div>
+      <div class="shape-2"></div>
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="details">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="bar">
+            <div id="html-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+            <span>CSS</span>
+            <span>75%</span>
+          </div>
+          <div class="bar">
+            <div id="css-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+            <span>Cpp</span>
+            <span>72%</span>
+          </div>
+          <div class="bar">
+            <div id="Cpp-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+            <span>Python</span>
+            <span>68%</span>
+          </div>
+          <div class="bar">
+            <div id="Python-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <img src="Images/download.jpeg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Quaid-e-Azam</h1>
+        <p>
+          Muhammad Ali Jinnah was a barrister, politician and the founder of
+          Pakistan. Jinnah served as the leader of the All-India Muslim League
+          from 1913 until the inception of Pakistan on 14 August 1947
+        </p>
+        <a href="personalities.html"><button>Personalities</button></a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images/download (10).jpeg"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Germany</h1>
+        <p>
+          Germany is a Western European country with a landscape of forests,
+          rivers, mountain ranges and North Sea beaches. It has over 2 millennia
+          of history. Berlin, its capital, is home to art and nightlife scenes.
+        </p>
+        <a href="cities.html"><button>Cities</button></a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images/images (1).jpeg"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Fairy Meadows</h1>
+        <p>
+          Fairy Meadows, named by German climbers and locally known as Joot, is
+          a grassland near one of the base camp sites of the Nanga Parbat,
+          located in Diamer District, Gilgit-Baltistan, Pakistan.
+        </p>
+        <a href="tourist.html"><button>Tourist Spots</button></a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <%- include("partials/footer.ejs") %>
+
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

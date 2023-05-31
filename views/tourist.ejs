@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio| Tourist Spots</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/tourist.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/resume.png" type="image/x-icon" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <video autoplay muted loop id="World">
+        <source
+          src="Images\Lahore, Pakistan _ City life shown in a time-lapse.mp4"
+        />
+      </video>
+      <div class="container">
+        <%- include("partials/navbar.ejs") %>
+
+        <div class="row">
+          <div class="col">
+            <h3>Tourist Spots</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              nulla temporibus nisi perspiciatis veritatis hic cumque
+              exercitationem modi facere at.
+            </p>
+          </div>
+          <div class="col1">
+            <div class="card card1">
+              <h5>Angkor Wat</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, obcaecati!
+              </p>
+              <a href="https://en.wikipedia.org/wiki/New_York_City"
+                ><button type="button">Read More</button></a
+              >
+            </div>
+
+            <div class="card card2">
+              <h5>Colosseum</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, obcaecati!
+              </p>
+              <a href="https://en.wikipedia.org/wiki/San_Francisco"
+                ><button type="button">Read More</button></a
+              >
+            </div>
+
+            <div class="card card3">
+              <h5>Uyuni Salt Flats</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, obcaecati!
+              </p>
+              <a href="https://en.wikipedia.org/wiki/Barcelona"
+                ><button type="button">Read More</button></a
+              >
+            </div>
+
+            <div class="card card4">
+              <h5>Taj Mahal</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, obcaecati!
+              </p>
+              <a href="https://en.wikipedia.org/wiki/Paris"
+                ><button type="button">Read More</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <%- include("partials/footer.ejs") %>
+  </body>
+</html>
